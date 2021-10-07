@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int a, b, c;
+	string anakA, anakB, anakC;
+	cout << "==================================================" << endl;
+	cout << "PROGRAM MENENTUKAN BERAT BADAN TERBERAT" << endl;
+	cout << "Masukkan Nama \t:";
+	cin >> anakA;
+	cout << "Masukan berat Badan \t:";
+	cin >> a;
+	cout << "Masukkan Nama \t:";
+	cin >> anakB;
+	cout << "Masukan Berat Badan \t:";
+	cin >> b;
+	cout << "Masukkan Nama \t:";
+	cin >> anakC;
+	cout << "Masukan Berat Badan \t:";
+	cin >> c;
+
+	if (a > b && a > c) {
+		cout << anakA << " adalah anak terberat";
+		cout << " Dengan Berat Badan  " << a << endl;
+	}
+	else if (c > b && c > a) {
+		cout << anakC << " adalah anak terberat";
+		cout << " Dengan Berat Badan  " << c << endl;
+	}
+	else {
+		cout << anakB << " adalah anak terberat";
+		cout << " Dengan Berat Badan  " << b << endl;
+	}
+	cout << endl;
+	return 0;
+}
