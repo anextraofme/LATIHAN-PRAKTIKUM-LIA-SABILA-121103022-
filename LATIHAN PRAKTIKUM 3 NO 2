@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	float bil1, bil2, bil3;
+	cout << "==================================================" << endl;
+	cout << "PROGRAM MENENTUKAN NILAI MAKSIMAL" << endl;
+	cout << "Masukkan Bil-1 = ";
+	cin >> bil1;
+	cout << "Masukkan Bil-2 = ";
+	cin >> bil2;
+	cout << "Masukkan Bil-3 = ";
+	cin >> bil3;
+
+	//menentukan nilai terbesar
+	if (bil1 > bil2 && bil1 > bil3) {
+		cout << bil1 << " adalah bilangan maksimal" << endl;
+
+	}
+	else if (bil3 > bil2 && bil3 > bil1) {
+		cout << bil3 << " adalah bilangan maksimal" << endl;
+
+	}
+	else {
+		cout << bil2 << " adalah bilangan maksimal" << endl;
+
+	}
+	cout << endl;
+	return 0;
+}
