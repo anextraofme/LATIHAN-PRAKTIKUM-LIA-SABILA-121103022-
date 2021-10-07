@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	string yourName;
+	int pilih;
+	float f, i, n;
+	cout << "==================================================" << endl;
+	cout << "PROGRAM MENGHITUNG BONUS" << endl;
+	f = 10000000;
+	i = 0.010;
+	n = 0.05;
+	cout << "Masukkan Nama anda = ";
+	cin >> yourName;
+	cout << "Nilai Penjualan Rp. 10000000" << endl;
+	cout << "Pilih total Presentase Bonus" << endl;
+	cout << "\t 1. 10%" << endl;
+	cout << "\t 2. 5%" << endl;
+	cout << "Silahkan Pilih [1/2]" << endl;
+	cin >> pilih;
+	cout << endl;
+
+	if (pilih == 1) {
+		cout << yourName << " Mendapatkan uang bonus sebesar Rp. " << f * i;
+	}
+	if (pilih == 2) {
+		cout << yourName << " Mendapatkan uang bonus sebesar Rp. " << f * n;
+	}
+	cout << endl;
+	return 0;
+}
