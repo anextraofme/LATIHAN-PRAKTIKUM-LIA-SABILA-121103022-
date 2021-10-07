@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	float angka1, angka2;
+	string operasi;
+	cout << "==================================================" << endl;
+	cout << "PROGRAM KALTULATOR" << endl;
+	cout << "Masukkan Angka Pertama = ";
+	cin >> angka1;
+	cout << "Masukkan Angka Kedua = ";
+	cin >> angka2;
+	cout << "Masukkan Operator = ";
+	cin >> operasi;
+
+	if (operasi == "+") {
+		cout << angka1 << operasi << angka2 << " hasilnya adalah =" << angka1 + angka2;
+	}
+	else if (operasi == "-") {
+		cout << angka1 << operasi << angka2 << " hasilnya adalah = " << angka1 - angka2;
+	}
+	else if (operasi == "/") {
+		cout << angka1 << operasi << angka2 << " hasilnya adalah = " << angka1 / angka2;
+	}
+	else if (operasi == "*") {
+		cout << angka1 << operasi << angka2 << " hasilnya adalah = " << angka1 * angka2;
+	} 
+	cout << endl;
+	return 0;
+} 
